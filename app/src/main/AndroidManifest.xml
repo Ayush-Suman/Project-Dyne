@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="a.suman.dyne">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dyne_icon_real"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".User.AboutUs"></activity>
+        <activity android:name=".User.AdvisoryBoard" />
+        <activity android:name=".User.GymPaymentInterface" />
+        <activity android:name=".User.ChatView" />
+        <activity android:name=".User.FirstLogin" />
+        <activity android:name=".Trainers.Trainers_ui" />
+        <activity android:name=".Testing" />
+        <activity
+            android:name=".User.Views.Home"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".User.Views.Login" />
+        <activity android:name=".User.Views.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
